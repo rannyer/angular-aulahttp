@@ -1,9 +1,41 @@
-<div class="card">
+<div class="card" cdkDrag>
     <img [src]="produto.image" alt="">
     <p class="nome">{{produto.title}}</p>
     <p class="preco">$ {{produto.price}}</p>
     <p class="categoria">{{produto.category}}</p>
 
-    <button class="excluir" (click)="excluir(produto.id)">Excluir</button>
+    <button mat-fab class="excluir" (click)="excluir(produto.id)">
+        <mat-icon fontIcon="delete"></mat-icon>
+    </button>
+    
     <button (click)="abrirDetalhes()">Ver detalhes</button>
+    <button (click)="abrirPopup()">Atualizar</button>
+
+</div>
+
+<div class="popup" *ngIf="mostrandoPop">
+    <div class="pop-content">
+        <h3>Editar produto</h3>
+
+        <mat-form-field>
+            <mat-label for="">Titulo</mat-label>
+            <input matInput type="text" [(ngModel)]="produtoEdit.title">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="">Preço</mat-label>
+            <input matInput type="text" [(ngModel)]="produtoEdit.price">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="">Category</mat-label>
+            <input  matInput type="text" [(ngModel)]="produtoEdit.category">
+        </mat-form-field>
+
+
+        <div class="acoes">
+            <button class="salvar" (click)="atualizar()">Salvar</button>
+            <button class="fechar" (click)="fecharPopup()">Fechar</button>
+        </div>
+    </div>
 </div>

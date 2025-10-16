@@ -17,3 +17,50 @@
     width: 120px;
     height: 120px;
 }
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29, 29, 29, 0.682);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.pop-content{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+
+}
+.pop-content input{
+    margin-bottom: 1rem;
+}
+.acoes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.pop-content button{
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.salvar{
+    background-color: rgb(52, 183, 223);
+}
+
+.fechar{
+    background-color: rgb(223, 52, 61);
+
+}

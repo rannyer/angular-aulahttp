@@ -8,7 +8,7 @@ import { Produto } from '../models/produto.model';
 })
 export class ProdutoService {
 
-  private readonly API_URL = "https://fakestoreapi.com/products";
+  private readonly API_URL = "http://localhost:3000/produtos";
 
   constructor(private http:HttpClient) { }
 

@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "10",
+      "title": "Cadeira Gamer StormX",
+      "price": 1399,
+      "category": "Móveis",
+      "description": "Cadeira ergonômica com apoio lombar, reclinável e acabamento em couro sintético.",
+      "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+      "rating": {
+        "rate": 4.6,
+        "count": 220
+      }
+    }
+  ]
+}

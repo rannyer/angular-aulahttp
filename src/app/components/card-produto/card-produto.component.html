@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="produto.image" alt="">
+    <p class="nome">{{produto.title}}</p>
+    <p class="preco">$ {{produto.price}}</p>
+    <p class="categoria">{{produto.category}}</p>
+
+    <button class="excluir" (click)="excluir(produto.id)">Excluir</button>
+    <button (click)="abrirDetalhes()">Ver detalhes</button>
+</div>

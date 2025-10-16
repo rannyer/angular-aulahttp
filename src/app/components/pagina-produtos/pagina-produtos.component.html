@@ -1,0 +1,16 @@
+<h2 class="titulo">Lista de produtos</h2>
+
+<div class="loading" *ngIf="carregando">Carregando...</div>
+<div class="error" *ngIf="erro">Erro: {{erro}}</div>
+
+<div class="lista" *ngIf="!carregando && !erro">
+    <app-card-produto 
+    
+        *ngFor="let item of produtos" 
+        [produto]="item"
+        (produtoExcluido)="bucarProdutos()"
+        />
+</div>
+
+
+<button (click)="bucarProdutos()">Buscar</button>

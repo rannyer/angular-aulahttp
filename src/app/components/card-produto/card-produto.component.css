@@ -1,0 +1,19 @@
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 200px;
+}
+
+.card .nome{
+    overflow:  hidden;
+    text-overflow: ellipsis;
+ 
+    white-space: nowrap;
+
+}
+
+.card img{
+    width: 120px;
+    height: 120px;
+}
